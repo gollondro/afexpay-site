@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — AfexPay Perú</title>
+  <meta name="description" content="Contacta con AfexPay Perú. Habla con nuestro equipo comercial para activar tus soluciones de pagos internacionales.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2335a32c'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-size='16' font-weight='bold'>A</text></svg>">
+</head>
+<body>
+  <div class="page-loader"><div class="page-loader__spinner"></div></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo"><div class="header__logo-icon">A</div>Afex<span>Pay</span></a>
+      <nav class="header__nav">
+        <a href="soluciones.html" class="header__link">Soluciones</a>
+        <a href="comercios.html" class="header__link">Comercios</a>
+        <a href="empresas.html" class="header__link">Empresas</a>
+        <a href="sobre-afex.html" class="header__link">Sobre AFEX</a>
+        <a href="seguridad.html" class="header__link">Seguridad</a>
+        <a href="contacto.html" class="header__link header__link--active">Contacto</a>
+      </nav>
+      <a href="contacto.html" class="btn btn--primary btn--sm header__cta header__cta--desktop">Activar AfexPay</a>
+      <button class="header__hamburger" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="mobile-nav">
+    <a href="soluciones.html" class="mobile-nav__link">Soluciones</a>
+    <a href="comercios.html" class="mobile-nav__link">Comercios</a>
+    <a href="empresas.html" class="mobile-nav__link">Empresas</a>
+    <a href="sobre-afex.html" class="mobile-nav__link">Sobre AFEX</a>
+    <a href="seguridad.html" class="mobile-nav__link">Seguridad</a>
+    <a href="contacto.html" class="mobile-nav__link">Contacto</a>
+    <a href="contacto.html" class="btn btn--primary mobile-nav__cta">Activar AfexPay</a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero hero--inner">
+    <div class="container">
+      <span class="section__label">Contacto</span>
+      <h1 class="hero__title">Hablemos sobre lo que necesitas</h1>
+      <p class="hero__subtitle">Nuestro equipo está listo para ayudarte a encontrar la solución ideal para tus pagos internacionales.</p>
+    </div>
+  </section>
+
+  <!-- Contact form + info -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <form id="contactForm" class="form">
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" class="form__input" placeholder="Tu nombre completo" required>
+                <span class="form__error">Ingresa tu nombre</span>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="empresa">Empresa</label>
+                <input type="text" id="empresa" class="form__input" placeholder="Nombre de tu empresa (opcional)">
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="tipo">Tipo de cliente *</label>
+                <select id="tipo" class="form__select" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="persona">Persona</option>
+                  <option value="empresa">Empresa</option>
+                  <option value="comercio">Comercio</option>
+                </select>
+                <span class="form__error">Selecciona un tipo de cliente</span>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="email">Email *</label>
+                <input type="email" id="email" class="form__input" placeholder="tu@email.com" required>
+                <span class="form__error">Ingresa un email válido</span>
+              </div>
+            </div>
+            <div class="form__row form__row--full">
+              <div class="form__group">
+                <label class="form__label" for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="form__input" placeholder="+51 9XX XXX XXX">
+              </div>
+            </div>
+            <div class="form__row form__row--full">
+              <div class="form__group">
+                <label class="form__label" for="mensaje">Mensaje</label>
+                <textarea id="mensaje" class="form__textarea" placeholder="Cuéntanos qué necesitas..."></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg" style="width: 100%; justify-content: center;">Enviar mensaje</button>
+          </form>
+
+          <!-- Success message -->
+          <div class="form__success">
+            <div class="form__success-icon">✅</div>
+            <h3 class="form__success-title">¡Mensaje enviado!</h3>
+            <p class="form__success-text">Gracias por contactarnos. Un ejecutivo de AfexPay se comunicará contigo dentro de las próximas 24 horas hábiles.</p>
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <h3 class="contact-info__title">Información de contacto</h3>
+          <p class="contact-info__text">También puedes contactarnos directamente por cualquiera de estos medios. Nuestro equipo está disponible de lunes a viernes en horario laboral.</p>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">📧</div>
+            <div>
+              <div class="contact-info__label">Email</div>
+              <div class="contact-info__value">contacto@afexpay.pe</div>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon">📞</div>
+            <div>
+              <div class="contact-info__label">Teléfono</div>
+              <div class="contact-info__value">+51 1 234 5678</div>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon">📍</div>
+            <div>
+              <div class="contact-info__label">Oficina</div>
+              <div class="contact-info__value">Lima, Perú</div>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon">🕐</div>
+            <div>
+              <div class="contact-info__label">Horario</div>
+              <div class="contact-info__value">Lunes a Viernes, 9:00 – 18:00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo"><div class="footer__logo-icon">A</div>Afex<span>Pay</span></div>
+          <p class="footer__desc">Plataforma de pagos internacionales del grupo AFEX en Perú. Más de 45 años de respaldo financiero.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" aria-label="LinkedIn">in</a>
+            <a href="#" class="footer__social" aria-label="Twitter">𝕏</a>
+            <a href="#" class="footer__social" aria-label="Instagram">ig</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">Soluciones</div>
+          <a href="soluciones.html#payin" class="footer__link">Pay In Perú</a>
+          <a href="soluciones.html#payout" class="footer__link">Pay Out Perú</a>
+          <a href="comercios.html" class="footer__link">Afex Go</a>
+          <a href="soluciones.html#connect" class="footer__link">AFEX Connect</a>
+        </div>
+        <div>
+          <div class="footer__col-title">Empresa</div>
+          <a href="sobre-afex.html" class="footer__link">Sobre AFEX</a>
+          <a href="empresas.html" class="footer__link">Empresas</a>
+          <a href="seguridad.html" class="footer__link">Seguridad</a>
+          <a href="contacto.html" class="footer__link">Contacto</a>
+        </div>
+        <div>
+          <div class="footer__col-title">Contacto</div>
+          <a href="mailto:contacto@afexpay.pe" class="footer__link">contacto@afexpay.pe</a>
+          <a href="tel:+5112345678" class="footer__link">+51 1 234 5678</a>
+          <span class="footer__link">Lima, Perú</span>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">&copy; 2025 AfexPay Perú — Grupo AFEX. Todos los derechos reservados.</span>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Términos y condiciones</a>
+          <a href="#" class="footer__legal-link">Política de privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
