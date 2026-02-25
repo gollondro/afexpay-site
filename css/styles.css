@@ -278,6 +278,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .header__logo span { color: var(--green-500); }
 
+.header__logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+.footer__logo-img {
+  height: 30px;
+  width: auto;
+  display: block;
+}
+
 .header__nav {
   display: flex;
   align-items: center;
@@ -1393,12 +1405,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .animate-on-scroll {
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1;
+  transform: translateY(0);
   transition: all .7s cubic-bezier(.22, 1, .36, 1);
 }
 
-.animate-on-scroll.is-visible {
+.js-loaded .animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.js-loaded .animate-on-scroll.is-visible {
   opacity: 1;
   transform: translateY(0);
 }

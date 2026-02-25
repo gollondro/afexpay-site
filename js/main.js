@@ -3,6 +3,8 @@
    ======================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Mark JS as loaded for progressive enhancement
+  document.body.classList.add('js-loaded');
   // --- Page loader ---
   const loader = document.querySelector('.page-loader');
   if (loader) {
