@@ -1404,20 +1404,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+
+
+
+
+
+/* --- Scroll Animations --- */
 .animate-on-scroll {
   opacity: 1;
-  transform: translateY(0);
-  transition: all .7s cubic-bezier(.22, 1, .36, 1);
-}
-
-.js-loaded .animate-on-scroll {
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-.js-loaded .animate-on-scroll.is-visible {
-  opacity: 1;
-  transform: translateY(0);
+  transform: none;
+  transition: opacity .7s cubic-bezier(.22,1,.36,1), transform .7s cubic-bezier(.22,1,.36,1);
 }
 
 /* --- Responsive --- */
